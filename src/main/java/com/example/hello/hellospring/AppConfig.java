@@ -13,10 +13,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
+
     @Bean
     public MemberService memberService(){
         return new MemberServiceImpl(MemberRepository());
-        System.out.println("hello world");
+        System.out.println("good");
     }
 
     @Bean
